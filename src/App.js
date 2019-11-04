@@ -38,6 +38,9 @@ let [awayCount, setAway] = useState(0);
           <button onClick={() => setAway(awayCount + 7)} className="awayButtons__touchdown">Away Touchdown</button>
           <button onClick={() => setAway(awayCount + 7)} className="awayButtons__fieldGoal">Away Field Goal</button>
         </div>
+        <div className="reset">
+        <button onClick={() => setAway(0) & setHome(0)}>Reset</button>
+        </div>
       </section>
     </div>
   );
